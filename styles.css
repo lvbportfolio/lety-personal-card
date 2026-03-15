@@ -287,6 +287,30 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    background: #A6384C;
+    color: #EAB1B7;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #E33045;
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.1);
+}
+
+.hearts-decoration {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    opacity: 0.9;
 }
 
 /* ===== EFECTOS DE ANIMACIÓN ===== */
@@ -425,5 +449,5 @@ body {
     .detail-title {
         color: #EAB1B7;
     }
-    
-} 
+}
+
