@@ -152,13 +152,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Aplicar efecto typing al nombre (descomenta si quieres usarlo)
-    // const profileName = document.querySelector('.profile-name');
-    // if (profileName) {
-    //     const originalText = profileName.textContent;
-    //     setTimeout(() => {
-    //         typeWriter(profileName, originalText, 150);
-    //     }, 1000);
-    // }
+     const profileName = document.querySelector('.profile-name');
+     if (profileName) {
+        const originalText = profileName.textContent;
+         setTimeout(() => {
+            typeWriter(profileName, originalText, 150);
+        }, 1000);
+     }
     
     // ===== FUNCIÓN PARA MOSTRAR MENSAJE DE BIENVENIDA =====
     function showWelcomeMessage() {
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         welcomeDiv.className = 'welcome-message';
         welcomeDiv.innerHTML = `
             <div class="welcome-content">
-                <span class="material-icons">👋</span>
+                <span class="material-icons">♥︎</span>
                 <p>¡Bienvenido a mi perfil!</p>
             </div>
         `;
