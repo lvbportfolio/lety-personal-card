@@ -7,13 +7,17 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     background-color: #EAB1B7;
+  background-image:
+    radial-gradient(#A6384C 2px, transparent 2px),
+    radial-gradient(#E33045 2px, transparent 2px);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    color: #333;
 }
 
 /* ===== CONTENEDOR PRINCIPAL ===== */
@@ -25,13 +29,13 @@ body {
 
 /* ===== TARJETA DE PERFIL ===== */
 .profile-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: #A6384C;
     backdrop-filter: blur(10px);
     border-radius: 24px;
     padding: 32px;
     box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.1),
-        0 8px 16px rgba(0, 0, 0, 0.1);
+        0 20px 40px #A6384C,
+        0 8px 16px #A6384C;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -39,8 +43,8 @@ body {
 .profile-card:hover {
     transform: translateY(-5px);
     box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.15),
-        0 12px 24px rgba(0, 0, 0, 0.12);
+        0 25px 50px #a6384ca1,
+        0 12px 24px #a6384ca1;
 }
 
 /* ===== SECCIÓN DE INFORMACIÓN PERSONAL ===== */
@@ -55,12 +59,11 @@ body {
 }
 
 .profile-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    clip-path: path('M60 106.75 L52.75 100.15 C27 76.8 10 61.4 10 42.5 C10 27.1 22.1 15 37.5 15 C46.2 15 54.55 19.05 60 25.45 C65.45 19.05 73.8 15 82.5 15 C97.9 15 110 27.1 110 42.5 C110 61.4 93 76.8 67.25 100.15 L60 106.75 z');
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease;
 }
 
@@ -298,7 +301,7 @@ body {
 /* ===== ESTILOS PARA MODO OSCURO (OPCIONAL) ===== */
 @media (prefers-color-scheme: dark) {
     .profile-card {
-        background: rgba(30, 30, 30, 0.95);
+        background: #A6384C;
         color: #fff;
     }
     
