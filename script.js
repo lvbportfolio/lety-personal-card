@@ -165,9 +165,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const welcomeDiv = document.createElement('div');
         welcomeDiv.className = 'welcome-message';
         welcomeDiv.innerHTML = `
-            <div class="welcome-content">
-                <span class="material-icons">♥︎</span>
-                <p>Te doy la bienvenida a mi perfil!</p>
+            <div class="welcome-content" style="display: flex; align-items: center; gap: 10px;">
+                <img src="img/tinyheart.webp" alt="heart" style="width: 20px; height: 20px;">
+                <p style="margin: 0;">Te doy la bienvenida a mi perfil!</p>
             </div>
         `;
         
