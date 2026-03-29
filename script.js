@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         welcomeDiv.innerHTML = `
             <div class="welcome-content">
                 <span class="material-icons">♥︎</span>
-                <p>¡Bienvenido a mi perfil!</p>
+                <p>Te doy la bienvenida a mi perfil!</p>
             </div>
         `;
         
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: rgba(25, 118, 210, 0.9);
+            background: #A6384C;
             color: white;
             padding: 12px 20px;
             border-radius: 25px;
