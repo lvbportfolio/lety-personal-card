@@ -279,6 +279,7 @@ body {
 
 .favorite-item:hover {
     transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(166, 56, 76, 0.15);
 }
 
 /* ===== FOOTER ===== */
@@ -450,4 +451,3 @@ body {
         color: #EAB1B7;
     }
 }
-

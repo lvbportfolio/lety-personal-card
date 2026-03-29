@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Efecto de hover para elementos favoritos
     favoriteItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateX(6px)';
-            this.style.boxShadow = '0 4px 8px rgba(25, 118, 210, 0.2)';
+            this.style.transform = 'translateX(4px)';
+            this.style.boxShadow = '0 4px 12px rgba(166, 56, 76, 0.15)';
         });
         
         item.addEventListener('mouseleave', function() {
