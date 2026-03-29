@@ -23,7 +23,8 @@ body {
 /* ===== CONTENEDOR PRINCIPAL ===== */
 .container {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -105,7 +106,7 @@ body {
     cursor: pointer;
     transition: all 0.4s ease;
     position: relative;
-    min-width: 90px;
+    flex: 1 1 120px;
     min-height: 45px;
     display: flex;
     align-items: center;
@@ -175,29 +176,28 @@ body {
 /* HABILIDADES - MODIFICAR ESTILOS AQUÍ SI NECESITAS */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
 .skill-item {
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    background: #EAB1B7;
     padding: 16px;
     border-radius: 12px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid #e3f2fd;
+    border: 1px solid #E33045;
 }
 
 .skill-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(25, 118, 210, 0.2);
-    background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(166, 56, 76, 0.15);
 }
 
 .skill-name {
     font-size: 16px;
     font-weight: 500;
-    color: #1976d2;
+    color: #A6384C;
 }
 
 /* ===== SECCIONES DE FAVORITOS ===== */
@@ -337,15 +337,15 @@ body {
     }
     
     .profile-name {
-        font-size: 32px;
+        font-size: 34px;
     }
     
     .profile-lastname {
-        font-size: 32px;
+        font-size: 34px;
     }
     
     .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
     
@@ -366,16 +366,16 @@ body {
     }
     
     .profile-image {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
     
     .profile-name {
-        font-size: 28px;
+        font-size: 30px;
     }
     
     .profile-lastname {
-        font-size: 28px;
+        font-size: 30px;
     }
     
     .section-title {
@@ -383,7 +383,7 @@ body {
     }
     
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     
@@ -391,6 +391,11 @@ body {
         padding: 10px;
     }
     
+    .detail-card {
+        flex: 1 1 100%;
+        min-height: 50px;
+    }
+
     .favorite-item {
         font-size: 14px;
         padding: 10px 12px;
@@ -410,16 +415,21 @@ body {
     }
     
     .profile-image {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     
     .profile-name {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .profile-lastname {
-        font-size: 16px;
+        font-size: 24px;
+    }
+
+    .detail-card {
+        padding: 8px;
+        font-size: 13px;
     }
 }
 
